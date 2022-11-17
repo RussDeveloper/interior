@@ -1,0 +1,294 @@
+{% include 'base.html' %}
+{% load static %}
+
+        {% block content %}
+    <!-- Preloading -->
+    <div id="preload">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!--End Preloading-->
+
+    <!--Menu-->
+    <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                <span class="sr-only">Открыть меню</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="nav navbar-nav uppercase">
+                    <li class="links"><a class="scroll" href="index.html">Главная</a></li>
+                    <li class="links"><a class="scroll" href="service.html">Услуги</a></li>
+                    <li class="links"><a class="scroll" href="about.html">О нас</a></li>
+                    <li class="links"><a class="scroll" href="team.html">Сотрудники</a></li>
+                    <li class="links dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Проекты</a>
+                        <ul class="dropdown-menu sub-menu">
+                            <li><a href="portfolio_v1.html">Проект №1</a></li>
+                            <li><a href="#">Проект №2</a></li>
+                            <li><a href="#">Проект №3</a></li>
+                        </ul>
+                    </li>
+                    <li class="links"><a class="scroll" href="blog.html">Новости</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--End Menu-->
+
+    <!--Slider-->
+    <div id="slides">
+        <ul class="slides-container ">
+
+            <!--Slider 1-->
+            <li>
+                <img src="{% static 'img/slide1.jpg' %}" alt="">
+                <div class="container text-center">
+                    <h2 class="slide-one wow fadeInDown">Добро пожаловать</h2>
+                    <p class="slide-one">Описание партнерской программы №1</p>
+                    <a class="button button-light-red wow fadeInLeft"  href="#">Подробнее</a>
+                    <a class="button button-light-red wow fadeInRight"  href="#">Заказать</a>
+                </div>
+            </li>
+            <!--End Slider 1-->
+
+            <!--Slider 1-->
+            <li>
+                <img src="{% static 'img/slide2.jpg' %}" alt="">
+                <div class="container text-center">
+                    <h2 class="slide-two wow fadeInDown">Добро пожаловать</h2>
+                    <p class="slide-two">Описание партнерской программы №2</p>
+                    <a class="button button-yellow wow fadeInLeft" href="#">Подробнее</a>
+                    <a class="button button-yellow wow fadeInRight" href="#">Заказать</a>
+                </div>
+            </li>
+            <!--End Slider 2-->
+
+            <!--Slider 3-->
+            <li>
+                <img src="{% static 'img/slide3.jpg' %}" alt="">
+                <div class="container text-center">
+                    <h2 class="slide-three wow fadeInDown">Добро пожаловать</h2>
+                    <p class="slide-three">Описание партнерской программы №3</p>
+                    <a class="button button-white wow fadeInLeft" href="#">Подробнее</a>
+                    <a class="button button-white wow fadeInRight" href="#">Заказать</a>
+                </div>
+            </li>
+            <!--End Slider 3-->
+        </ul>
+
+        <!--End Navgation-->
+        <nav class="slides-navigation">
+            <div class="container">
+                <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+            </div>
+        </nav>
+    </div>
+    <!--End Slider-->
+
+    <!--Home-->
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <!--Header-->
+                    <h1 class="wow fadeInUp">Наши главные услуги</h1>
+                    <!--Sub Head-->
+                    <p class="subhead">Описание партнерской программы №1</p>
+                </div>
+                <!--Content-->
+                <div class="col-lg-12 home-content text-center">
+                    <div class="row">
+                        <div class="col-lg-4 wow fadeInLeft">
+                            <h3>Оформление комнат</h3>
+                            <p class="detail">Описание партнерской программы</p>
+                            <a class="button button-light-red my-red" href="#">Смотреть!</a>
+                        </div>
+                        <div class="col-lg-4 wow fadeInUp"><img src="img/diamond.png" alt=""></div>
+                        <div class="col-lg-4 wow fadeInRight">
+                            <h3>Разработка дизайна</h3>
+                            <p class="detail">Описание партнерской программы №2</p>
+                            <a class="button button-light-red my-red" href="#">Смотреть!</a>
+                        </div>
+                    </div>
+                </div><!--End Content-->
+            </div><!--End Row-->
+        </div><!--Container-->
+    </div>
+    <!--End Home-->
+
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 text-center">
+                    <div class="row">
+                        <!--Header-->
+                        <h1 class="uppercase wow fadeInDown">Проекты</h1>
+                        <!--Sub Head-->
+                        <p class="wow fadeInUp">Задача организации, в особенности<br> же постоянный количественный рост и сфера.</p>
+                        <div class="line"></div>
+                        <!--Image-->
+                        <div class="browser clearfix">
+                            <!--Left Image-->
+                            <div class="left pull-left wow fadeInLeft"><img class="img-responsive" src="{% static 'img/browserleft.jpg' %}" alt=""></div>
+                            <!--Center Image-->
+                            <div class="center wow fadeInUp"><img class="img-responsive" src="{% static 'img/browser.jpg' %}" alt=""></div>
+                            <!--Right Image-->
+                            <div class="right pull-right clearfix wow fadeInRight"><img class="img-responsive" src="{% static 'img/browserright.jpg' %}" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--End Row-->
+        </div><!--End Container-->
+    </div>
+    <!--End Portfolio-->
+
+    <!--Content-->
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 contents">
+                    <div class="row">
+                        <div class="col-lg-6 box">
+                            <ul>
+                                <li class="wow fadeInLeft">
+                                    <img src="img/ico-img-1.png" alt="">
+                                    <div class="box">
+                                        <h3>Создание дизайна</h3>
+                                        <p>Описание партнерской программы №2</p>
+                                    </div>
+                                </li>
+                                <li class="boxes wow fadeInLeft">
+                                    <img src="img/ico-img-2.png" alt="">
+                                    <div class="box">
+                                        <h3>Интерьер в стиле "модерн"</h3>
+                                        <p>Описание партнерской программы №2</p>
+                                    </div>
+                                </li>
+                                <li class="boxes wow fadeInLeft">
+                                    <img src="img/ico-img-1.png" alt="">
+                                    <div class="box">
+                                        <h3>Готовый интерьер</h3>
+                                        <p>Описание партнерской программы №2</p>
+                                    </div>
+                                </li>
+                                 <li class="boxes wow fadeInLeft">
+                                    <img src="img/ico-img-2.png" alt="">
+                                    <div class="box">
+                                        <h3>Реализация дизайна</h3>
+                                        <p>Описание партнерской программы №2</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--Video-->
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="video wow fadeInRight">
+                                <iframe width="400" height="225" src="https://www.youtube.com/embed/yu_bRUJUPBQ" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <!--Video Content-->
+                            <div class="video wow fadeInRight col-xs-12 row">
+                                <div class="video-picture"><img src="img/video1.jpg" alt=""></div>
+                                <div class="video-box">
+                                   <h3><a class="popup-youtube" href="#">Смотрите наши проекты</a></h3>
+                                    <p>Описание партнерской программы №2</p>
+                                </div>
+                            </div>
+                            <!--End Video Content-->
+
+                            <!--Video Content-->
+                            <div class="video wow fadeInRight col-xs-12 row">
+                                <div class="video-picture"><img src="img/video2.jpg" alt=""></div>
+                                <div class="video-box">
+                                    <h3><a href="#" class="popup-vimeo">Заказывайте</a></h3>
+                                    <p>Описание партнерской программы №2</p>
+                                </div>
+                            </div>
+                            <!--End Video Content-->
+                        </div>
+                    </div>
+                </div><!--End Contents-->
+            </div><!--End Row-->
+        </div><!--End Container-->
+    </div>
+    <!--End Content-->
+
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 row wow fadeInDown">
+                    <!--Header-->
+                    <h2>Контакты</h2>
+                    <p>Описание партнерской программы №2</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Map-->
+          <div id="gmap_canvas"></div>
+        <!--End Map-->
+
+        <!--Contact Detail-->
+        <div class="container">
+            <div class="row">
+                <div class="contact-detail">
+                    <div class="row col-lg-3">
+                        <!--Address-->
+                        <div class="address wow fadeInLeft">
+                            <h3 class="title">Адрес</h3>
+                            <p>Россия<br>Москва<br>ул. Пушкина</p>
+                        </div>
+                        <!--Telephone-->
+                        <div class="telephone wow fadeInLeft">
+                            <h3 class="title">Телефон</h3>
+                            <p class="tel">Тел: 111-111-111</p>
+                            <p class="fax">Тел: 111-111-111</p>
+                        </div>
+                    </div>
+
+                    <!--Form-->
+                    <div class="row col-lg-9 wow fadeInRight">
+                        <h3>Отправить сообщение</h3>
+                        <p>Описание партнерской программы №2</p>
+                        <!--Name-->
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Имя" required data-valitation-required-message="Please Enter Your Name" />
+                        </div>
+                        <!--Email-->
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Email" required data-validation-required-message="Please Enter Your Email" />
+                        </div>
+                        <!--Message-->
+                        <div>
+                            <textarea rows="1" name="message" id="message" placeholder="Сообщение" required data-validation-required-message="Please Enter Your Message"></textarea>
+                        </div>
+                        <!--Button-->
+                        <div class="col-lg-12">
+                            <button class="button pull-right" onclick="contact_send();">Отправить</button>
+                        </div>
+                    </div><!--End Form-->
+
+                </div><!--End Contact Detail-->
+            </div><!--End Row-->
+        </div><!--End Container-->
+    </div>
+    <!--End Contact-->
+{% endblock %}
