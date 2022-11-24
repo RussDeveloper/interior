@@ -34,25 +34,57 @@
 </head>
 <body>
 
-    {% block content %}{% endblock %}
-    <!--Testimonial-->
-    <div id="testimonials" class="clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="row col-lg-12 text-center wow fadeIn">
-                    <h2>Наши партнеры</h2>
-                    <ul class="text-center">
-                        <li><a href="#"><img src="img/partner1.png" alt="" class="img-responsive" /></a><div class="bulut"><p>Описание партнерской программы №1</p></div></li>
-                        <li><a href="#"><img src="img/partner2.png" alt="" class="img-responsive"/></a><div class="bulut"><p>Описание партнерской программы №2</p> </div></li>
-                        <li><a href="#"><img src="img/partner3.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №3</p></div></li>
-                        <li><a href="#"><img src="img/partner4.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №4</p> </div><div class="bulut"></div></li>
-                        <li><a href="#"><img src="img/partner5.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №5</p> </div></li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Preloading -->
+    <div id="preload">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
         </div>
     </div>
-    <!--End Testimonial-->
+    <!--End Preloading-->
+
+    <!--Menu-->
+    <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                <span class="sr-only">Открыть меню</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="nav navbar-nav uppercase">
+                    <li class="links"><a class="scroll" href="{% url 'home' %}">Главная</a></li>
+                    <li class="links"><a class="scroll" href="{% url 'service' %}">Услуги</a></li>
+                    <li class="links"><a class="scroll" href="{% url 'about' %}">О нас</a></li>
+                    <li class="links"><a class="scroll" href="{% url 'team' %}">Сотрудники</a></li>
+                    <li class="links dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Проекты</a>
+                        <ul class="dropdown-menu sub-menu">
+                            <li><a href="{% url 'portfolio' %}">Проект №1</a></li>
+                            <li><a href="#">Проект №2</a></li>
+                            <li><a href="#">Проект №3</a></li>
+                        </ul>
+                    </li>
+                    <li class="links"><a class="scroll" href="{% url 'blog' %}">Новости</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--End Menu-->
+
+
+    {% block content %}
+    CONTENT
+    {% endblock %}
+
 
     <!--Footer-->
     <footer id="footers">
@@ -64,12 +96,12 @@
                     </div>
                     <div class="col-lg-6 hidden-xs hidden-sm">
                         <ul class="footer-menu">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Сотрудники</a></li>
-                            <li><a href="#">Проекты</a></li>
-                            <li><a href="#">Новости</a></li>
+                            <li><a href="{% url 'home' %}">Главная</a></li>
+                            <li><a href="{% url 'service' %}">Услуги</a></li>
+                            <li><a href="{% url 'about' %}">О нас</a></li>
+                            <li><a href="{% url 'team' %}">Сотрудники</a></li>
+                            <li><a href="{% url 'portfolio' %}">Проекты</a></li>
+                            <li><a href="{% url 'blog' %}">Новости</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 hidden-xs hidden-sm">
