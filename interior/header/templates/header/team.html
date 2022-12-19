@@ -1,4 +1,4 @@
-{% include 'base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
         {% block content %}
@@ -19,7 +19,7 @@
         </div>
         <!--Team Page Image-->
         <div class="team_img">
-            <img src="img/team.jpg" class="wow fadeIn" alt="">
+            <img src="{% static 'img/team.jpg' %}" class="wow fadeIn" alt="">
         </div>
     
         <!--Content-->
@@ -29,7 +29,7 @@
 
                     <!--Member-->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 member text-center wow fadeInLeft">
-                        <img src="img/team1.png" alt="">
+                        <img src="{% static 'img/team1.png' %}" alt="">
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -42,7 +42,7 @@
 
                     <!--Member-->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 member text-center wow fadeInUp">
-                        <img src="img/team2.jpg" alt="">
+                        <img src="{% static 'img/team2.jpg' %}" alt="">
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -55,7 +55,7 @@
 
                     <!--Member-->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 member text-center wow fadeInRight">
-                        <img src="img/team3.jpg" alt="">
+                        <img src="{% static 'img/team3.jpg' %}" alt="">
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -68,7 +68,7 @@
 
                     <!--Member-->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 member text-center wow fadeInLeft">
-                        <img src="img/team4.jpg" alt="">
+                        <img src="{% static 'img/team4.jpg' %}" alt="">
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -81,7 +81,7 @@
 
                     <!--Member-->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 member text-center wow fadeInUp">
-                        <img src="img/team5.png" alt="">
+                        <img src="{% static 'img/team5.png' %}" alt="">
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -94,7 +94,7 @@
 
                     <!--Member-->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 member text-center wow fadeInRight">
-                        <img src="img/team6.jpg" alt="">
+                        <img src="{% static 'img/team6.jpg' %}" alt="">
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -116,11 +116,11 @@
                 <div class="row col-lg-12 text-center wow fadeIn">
                     <h2>Наши партнеры</h2>
                     <ul class="text-center">
-                        <li><a href="#"><img src="img/partner1.png" alt="" class="img-responsive" /></a><div class="bulut"><p>Описание партнерской программы №1</p></div></li>
-                        <li><a href="#"><img src="img/partner2.png" alt="" class="img-responsive"/></a><div class="bulut"><p>Описание партнерской программы №2</p> </div></li>
-                        <li><a href="#"><img src="img/partner3.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №3</p></div></li>
-                        <li><a href="#"><img src="img/partner4.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №4</p> </div><div class="bulut"></div></li>
-                        <li><a href="#"><img src="img/partner5.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №5</p> </div></li>
+                        <li><a href="#"><img src="{% static 'img/partner1.png' %}" alt="" class="img-responsive" /></a><div class="bulut"><p>Описание партнерской программы №1</p></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner2.png' %}" alt="" class="img-responsive"/></a><div class="bulut"><p>Описание партнерской программы №2</p> </div></li>
+                        <li><a href="#"><img src="{% static 'img/partner3.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №3</p></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner4.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №4</p> </div><div class="bulut"></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner5.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №5</p> </div></li>
                     </ul>
                 </div>    
             </div>

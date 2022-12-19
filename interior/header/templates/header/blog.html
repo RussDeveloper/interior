@@ -1,4 +1,4 @@
-{% include 'base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
         {% block content %}
@@ -16,7 +16,7 @@
 
         <!--Blog Image-->
         <div class="blog_img">
-            <img src="img/blog.jpg" alt="" class="wow fadeIn img-responsive">
+            <img src="{% static 'img/blog.jpg' %}" alt="" class="wow fadeIn img-responsive">
         </div>
     
         <!--Content-->
@@ -32,11 +32,11 @@
                         <a href="blog_post.html" class="wow fadeInDown">Заголовок новости</a>
                         <!--User Comment-->
                         <ul class="user wow fadeInDown">
-                            <li><img src="img/name.png" alt="" class="img-responsive"></li>
+                            <li><img src="{% static 'img/name.png' %}" alt="" class="img-responsive"></li>
                             <li><p>Джон Доу</p></li>
                         </ul>
                         <ul class="comment clearfix wow fadeInDown">
-                            <li><img src="img/comment.png" alt="" class="img-responsive"></li>
+                            <li><img src="{% static 'img/comment.png' %}" alt="" class="img-responsive"></li>
                             <li><p>6 комментариев</p></li>
                         </ul>
                         <!--End User Comment-->
@@ -44,7 +44,7 @@
                         <hr class="wow fadeInDown">
                         <!--Paragraph-->
                         <p class="detail wow fadeInDown">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа существенных финансовых и административных условий.</p>
-                        <a href="blog_post.html"><img class="img_posts wow fadeInDown img-responsive" src="img/blogpost1.jpg" alt=""></a>
+                        <a href="blog_post.html"><img class="img_posts wow fadeInDown img-responsive" src="{% static 'img/blogpost1.jpg' %}" alt=""></a>
                         <p class="detail wow fadeInDown">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа существенных финансовых и административных условий.</p>
                         <!--End Paragraph-->
                     </div>
@@ -60,11 +60,11 @@
                         <a href="blog_post.html" class="wow fadeInDown">Заголовок новости</a>
                         <!--User Comment-->
                         <ul class="user wow fadeInDown">
-                            <li><img src="img/name.png" alt="" class="img-responsive"></li>
+                            <li><img src="{% static 'img/name.png' %}" alt="" class="img-responsive"></li>
                             <li><p>Джон Доу</p></li>
                         </ul>
                         <ul class="comment clearfix wow fadeInDown">
-                            <li><img src="img/comment.png" alt="" class="img-responsive"></li>
+                            <li><img src="{% static 'img/comment.png' %}" alt="" class="img-responsive"></li>
                             <li><p>6 комментариев</p></li>
                         </ul>
                         <!--End User Comment-->
@@ -72,7 +72,7 @@
                         <hr class="wow fadeInDown">
                         <!--Paragraph-->
                         <p class="detail wow fadeInDown">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа существенных финансовых и административных условий.</p>
-                        <a href="blog_post.html"><img class="img_posts wow fadeInDown img-responsive" src="img/blogpost1.jpg" alt=""></a>
+                        <a href="blog_post.html"><img class="img_posts wow fadeInDown img-responsive" src="{% static 'img/blogpost1.jpg' %}" alt=""></a>
                         <p class="detail wow fadeInDown">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа существенных финансовых и административных условий.</p>
                         <!--End Paragraph-->
                     </div>
@@ -88,11 +88,11 @@
                         <a href="blog_post.html" class="wow fadeInDown">Заголовок новости</a>
                         <!--User Comment-->
                         <ul class="user wow fadeInDown">
-                            <li><img src="img/name.png" alt="" class="img-responsive"></li>
+                            <li><img src="{% static 'img/name.png' %}" alt="" class="img-responsive"></li>
                             <li><p>Джон Доу</p></li>
                         </ul>
                         <ul class="comment clearfix wow fadeInDown">
-                            <li><img src="img/comment.png" alt="" class="img-responsive"></li>
+                            <li><img src="{% static 'img/comment.png' %}" alt="" class="img-responsive"></li>
                             <li><p>6 комментариев</p></li>
                         </ul>
                         <!--End User Comment-->
@@ -100,7 +100,7 @@
                         <hr class="wow fadeInDown">
                         <!--Paragraph-->
                         <p class="detail wow fadeInDown">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа существенных финансовых и административных условий.</p>
-                        <a href="blog_post.html"><img class="img_posts wow fadeInDown img-responsive" src="img/blogpost1.jpg" alt=""></a>
+                        <a href="blog_post.html"><img class="img_posts wow fadeInDown img-responsive" src="{% static 'img/blogpost1.jpg' %}" alt=""></a>
                         <p class="detail wow fadeInDown">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа существенных финансовых и административных условий.</p>
                         <!--End Paragraph-->
                     </div>
@@ -136,11 +136,11 @@
                 <div class="row col-lg-12 text-center wow fadeIn">
                     <h2>Наши партнеры</h2>
                     <ul class="text-center">
-                        <li><a href="#"><img src="img/partner1.png" alt="" class="img-responsive" /></a><div class="bulut"><p>Описание партнерской программы №1</p></div></li>
-                        <li><a href="#"><img src="img/partner2.png" alt="" class="img-responsive"/></a><div class="bulut"><p>Описание партнерской программы №2</p> </div></li>
-                        <li><a href="#"><img src="img/partner3.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №3</p></div></li>
-                        <li><a href="#"><img src="img/partner4.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №4</p> </div><div class="bulut"></div></li>
-                        <li><a href="#"><img src="img/partner5.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №5</p> </div></li>
+                        <li><a href="#"><img src="{% static 'img/partner1.png' %}" alt="" class="img-responsive" /></a><div class="bulut"><p>Описание партнерской программы №1</p></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner2.png' %}" alt="" class="img-responsive"/></a><div class="bulut"><p>Описание партнерской программы №2</p> </div></li>
+                        <li><a href="#"><img src="{% static 'img/partner3.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №3</p></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner4.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №4</p> </div><div class="bulut"></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner5.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №5</p> </div></li>
                     </ul>
                 </div>    
             </div>

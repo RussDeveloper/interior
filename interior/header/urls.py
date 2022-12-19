@@ -11,5 +11,6 @@ urlpatterns = [
     path('team/', team, name='team'),
     path('portfolio/', portfolio, name='portfolio'),
     path('blog/', blog, name='blog'),
+    path('', testing),
 ]
 

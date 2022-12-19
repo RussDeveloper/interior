@@ -1,5 +1,7 @@
-{% include 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
+
+
 {% block content %}
 
     <!--Slider-->
@@ -71,7 +73,7 @@
                             <p class="detail">Описание партнерской программы</p>
                             <a class="button button-light-red my-red" href="#">Смотреть!</a>
                         </div>
-                        <div class="col-lg-4 wow fadeInUp"><img src="img/diamond.png" alt=""></div>
+                        <div class="col-lg-4 wow fadeInUp"><img src="{% static 'img/diamond.png' %}" alt=""></div>
                         <div class="col-lg-4 wow fadeInRight">
                             <h3>Разработка дизайна</h3>
                             <p class="detail">Описание партнерской программы №2</p>
@@ -121,28 +123,28 @@
                         <div class="col-lg-6 box">
                             <ul>
                                 <li class="wow fadeInLeft">
-                                    <img src="img/ico-img-1.png" alt="">
+                                    <img src="{% static 'img/ico-img-1.png' %}" alt="">
                                     <div class="box">
                                         <h3>Создание дизайна</h3>
                                         <p>Описание партнерской программы №2</p>
                                     </div>
                                 </li>
                                 <li class="boxes wow fadeInLeft">
-                                    <img src="img/ico-img-2.png" alt="">
+                                    <img src="{% static 'img/ico-img-2.png' %}" alt="">
                                     <div class="box">
                                         <h3>Интерьер в стиле "модерн"</h3>
                                         <p>Описание партнерской программы №2</p>
                                     </div>
                                 </li>
                                 <li class="boxes wow fadeInLeft">
-                                    <img src="img/ico-img-1.png" alt="">
+                                    <img src="{% static 'img/ico-img-1.png' %}" alt="">
                                     <div class="box">
                                         <h3>Готовый интерьер</h3>
                                         <p>Описание партнерской программы №2</p>
                                     </div>
                                 </li>
                                  <li class="boxes wow fadeInLeft">
-                                    <img src="img/ico-img-2.png" alt="">
+                                    <img src="{% static 'img/ico-img-2.png' %}" alt="">
                                     <div class="box">
                                         <h3>Реализация дизайна</h3>
                                         <p>Описание партнерской программы №2</p>
@@ -158,7 +160,7 @@
                             </div>
                             <!--Video Content-->
                             <div class="video wow fadeInRight col-xs-12 row">
-                                <div class="video-picture"><img src="img/video1.jpg" alt=""></div>
+                                <div class="video-picture"><img src="{% static 'img/video1.jpg' %}" alt=""></div>
                                 <div class="video-box">
                                    <h3><a class="popup-youtube" href="#">Смотрите наши проекты</a></h3>
                                     <p>Описание партнерской программы №2</p>
@@ -168,7 +170,7 @@
 
                             <!--Video Content-->
                             <div class="video wow fadeInRight col-xs-12 row">
-                                <div class="video-picture"><img src="img/video2.jpg" alt=""></div>
+                                <div class="video-picture"><img src="{% static 'img/video2.jpg' %}" alt=""></div>
                                 <div class="video-box">
                                     <h3><a href="#" class="popup-vimeo">Заказывайте</a></h3>
                                     <p>Описание партнерской программы №2</p>
@@ -246,27 +248,14 @@
     </div>
     <!--End Contact-->
 
-   <!--Testimonial-->
-    <div id="testimonials" class="clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="row col-lg-12 text-center wow fadeIn">
-                    <h2>Наши партнеры</h2>
-                    <ul class="text-center">
+ {% endblock %}
 
-                        {% for partner in partners %}
+<!--
 
-                        <li><a href="#"><img src="{{ partner.logo.url }}" alt="" class="img-responsive" /></a>
-                            <div class="bulut"><p>{{ partner.program }}</p></div></li>
-                        {% endfor %}
-                         </ul>
+                           <comment>
+                                width="{% cycle 200 400 %}"
 
-                </div>
-            </div>
-        </div>
-    </div>
+                        </comment>
 
-    <!--End Testimonial-->
+-->
 
-
-{% endblock %}

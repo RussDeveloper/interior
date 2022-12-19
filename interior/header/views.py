@@ -23,6 +23,10 @@ def portfolio(request):
 def blog(request):
     return render(request, 'header/blog.html',)
 
+def testing(request):
+    users = Partners.objects.all();
+    return render(request, 'header/testing.html', {'users': users})
+
 
 
 

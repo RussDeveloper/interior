@@ -1,4 +1,4 @@
-{% include 'base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
         {% block content %}
@@ -19,7 +19,7 @@
 
         <!--What Page Image-->
         <div class="what_img">
-            <img src="img/what.jpg" class="wow fadeIn" alt="">
+            <img src="{% static 'img/what.jpg' %}" class="wow fadeIn" alt="">
         </div>
     
         <!--Content-->
@@ -35,7 +35,7 @@
                     <div class="works">
                         <!--Work-->
                         <div class="col-lg-4 col-md-6 col-sm-6 box wow fadeInleft">
-                            <div class="img-size"><img src="img/web.png" alt=""></div>
+                            <div class="img-size"><img src="{% static 'img/web.png' %}" alt=""></div>
                             <h3 class="title">Название услуги №1</h3>
                             <p class="detail">Задача организации, в особенности же постоянный количественный рост и сфера.</p>
                         </div>
@@ -43,7 +43,7 @@
 
                         <!--Work-->
                         <div class="col-lg-4 col-md-6 col-sm-6 box wow fadeInDown">
-                            <div class="img-size"><img src="img/html5.png" alt=""></div>
+                            <div class="img-size"><img src="{% static 'img/html5.png' %}" alt=""></div>
                             <h3 class="title">Название услуги №2</h3>
                             <p class="detail">Задача организации, в особенности же постоянный количественный рост и сфера.</p>
                         </div>
@@ -51,7 +51,7 @@
 
                         <!--Work-->
                         <div class="col-lg-4 col-md-6 col-sm-6 box wow fadeInRight">
-                            <div class="img-size"><img src="img/cms.png" alt=""></div>
+                            <div class="img-size"><img src="{% static 'img/cms.png' %}" alt=""></div>
                             <h3 class="title">Название услуги №3</h3>
                             <p class="detail">Задача организации, в особенности же постоянный количественный рост и сфера.</p>
                         </div>
@@ -59,7 +59,7 @@
 
                         <!--Work-->
                         <div class="col-lg-4 col-md-6 col-sm-6 box wow fadeInLeft">
-                            <div class="img-size text-center"><img src="img/marketing.png" alt=""></div>
+                            <div class="img-size text-center"><img src="{% static 'img/marketing.png' %}" alt=""></div>
                             <h3 class="title">Название услуги №4</h3>
                             <p class="detail">Задача организации, в особенности же постоянный количественный рост и сфера.</p>
                         </div>
@@ -67,7 +67,7 @@
 
                         <!--Work-->
                         <div class="col-lg-4 col-md-6 col-sm-6 box wow fadeInDown">
-                            <div class="img-size"><img src="img/googleapps.png" alt=""></div>
+                            <div class="img-size"><img src="{% static 'img/googleapps.png' %}" alt=""></div>
                             <h3 class="title">Название услуги №5</h3>
                             <p class="detail">Задача организации, в особенности же постоянный количественный рост и сфера.</p>
                         </div>
@@ -75,7 +75,7 @@
 
                         <!--Work-->
                         <div class="col-lg-4 col-md-6 col-sm-6 box wow fadeInRight">
-                            <div class="img-size"><img src="img/wordpress.png" alt=""></div>
+                            <div class="img-size"><img src="{% static 'img/wordpress.png' %}" alt=""></div>
                             <h3 class="title">Название услуги №6</h3>
                             <p class="detail">Задача организации, в особенности же постоянный количественный рост и сфера.</p>
                         </div>
@@ -93,11 +93,11 @@
                 <div class="row col-lg-12 text-center wow fadeIn">
                     <h2>Наши партнеры</h2>
                     <ul class="text-center">
-                        <li><a href="#"><img src="img/partner1.png" alt="" class="img-responsive" /></a><div class="bulut"><p>Описание партнерской программы №1</p></div></li>
-                        <li><a href="#"><img src="img/partner2.png" alt="" class="img-responsive"/></a><div class="bulut"><p>Описание партнерской программы №2</p> </div></li>
-                        <li><a href="#"><img src="img/partner3.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №3</p></div></li>
-                        <li><a href="#"><img src="img/partner4.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №4</p> </div><div class="bulut"></div></li>
-                        <li><a href="#"><img src="img/partner5.png" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №5</p> </div></li>
+                        <li><a href="#"><img src="{% static 'img/partner1.png' %}" alt="" class="img-responsive" /></a><div class="bulut"><p>Описание партнерской программы №1</p></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner2.png' %}" alt="" class="img-responsive"/></a><div class="bulut"><p>Описание партнерской программы №2</p> </div></li>
+                        <li><a href="#"><img src="{% static 'img/partner3.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №3</p></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner4.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №4</p> </div><div class="bulut"></div></li>
+                        <li><a href="#"><img src="{% static 'img/partner5.png' %}" alt="" class="img-responsive"/></a><div class="bulut"> <p>Описание партнерской программы №5</p> </div></li>
                     </ul>
                 </div>    
             </div>
